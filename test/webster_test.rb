@@ -32,6 +32,10 @@ class WebsterTest < Test::Unit::TestCase
     should "not contain a carriage return" do
       assert_no_match /\n/, @random
     end
+
+    should "be a word in the dictionary" do
+      assert @webster.dictionary.include?(@random)
+    end
   end
 
 end
