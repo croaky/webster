@@ -1,0 +1,27 @@
+h1. Webster
+
+Generate random short words. Good for human-readable confirmation codes.
+
+h2. Install
+
+  sudo gem install dancroak-webster --source=http://gems.github.com
+
+h2. Usage
+
+  require 'rubygems'
+  require 'webster'
+
+  @webster = Webster.new
+  @webster.random
+  
+  => "spoonless" 
+
+h2. Authors
+
+Webster was written for "Umbrella Today?":http://umbrellatoday.com by "thoughtbot":http://giantrobots.thoughtbot.com. It was extracted into a stand-alone Ruby gem by "Dan Croak":http://dancroak.com.
+
+h2. License
+
+MIT License, same terms as Ruby
+
+
