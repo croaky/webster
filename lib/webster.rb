@@ -1,5 +1,3 @@
-# require "open_safely"
-
 class Webster
 
   DICTIONARY_FILE = File.join(File.dirname(__FILE__), "words")
