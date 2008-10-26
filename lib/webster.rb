@@ -1,3 +1,5 @@
+# require "open_safely"
+
 class Webster
 
   DICTIONARY_FILE = File.join(File.dirname(__FILE__), "words")
@@ -5,11 +7,14 @@ class Webster
   attr_accessor :dictionary
   
   def initialize
-    @dictionary = IO.readlines DICTIONARY_FILE
+    @dictionary = []
+    File.open(DICTIONARY_FILE) do |file|
+      @dictionary = file.readlines.collect { |word| word.chomp }
+    end
   end
 
   def random
-    dictionary[rand(dictionary.size)].chomp
+    dictionary[rand(dictionary.size)]
   end
 
 end
