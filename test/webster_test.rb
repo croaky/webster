@@ -17,7 +17,7 @@ class WebsterTest < Test::Unit::TestCase
         assman whore whoredom whorelike whoreship whoreson whorish whorishly
         hemipenis penis penistone vagina vaginal vaginant vaginate vaginated
         vagina vaginal vaginant vaginate vaginated dildo dillweed dingus dinkum
-        swordick pussy anusim anusvara)
+        swordick pussy anusim anusvara rectum dick nipple clitoria clitoris clitorism)
     end
 
     should "not contain offensive words or offensive-sounding words" do
