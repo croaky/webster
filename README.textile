@@ -24,7 +24,7 @@ h2. Shoulda macro
       @word = subscription.set_activation_code
     end
   
-   should_be_webster_word @word
+   should_be_webster_word "@word"
 
 h2. Authors
 

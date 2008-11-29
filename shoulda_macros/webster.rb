@@ -1,4 +1,4 @@
-module Webster 
+class Webster 
   module Shoulda
     # Example:
     #  context "Subscription#activation_code" do
@@ -7,10 +7,11 @@ module Webster
     #     @code = subscription.set_activation_code
     #   end
     #
-    #  should_be_webster_word @code 
+    #  should_be_webster_word "@code" 
     #
     def should_be_webster_word(word)
-      should "be webster word #{word}" do
+      should "be webster word" do
+        word = eval word
         assert_kind_of String, word, 
           "#{word} is not a string but is a #{word.class}."
         assert_equal word, word.downcase, 
