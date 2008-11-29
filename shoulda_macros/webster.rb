@@ -4,10 +4,10 @@ module Webster
     #  context "Subscription#activation_code" do
     #   setup do
     #     subscription = Factory :subscription
-    #     word = subscription.set_activation_code
+    #     @code = subscription.set_activation_code
     #   end
     #
-    #  should_be_webster_word word 
+    #  should_be_webster_word @code 
     #
     def should_be_webster_word(word)
       should "be webster word #{word}" do
