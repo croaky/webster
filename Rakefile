@@ -22,7 +22,7 @@ begin
     s.homepage = "http://github.com/dancroak/webster"
     s.description = "Generate random short words. Good for human-readable confirmation codes."
     s.authors = ["Dan Croak"]
-    s.files = FileList["[A-Z]*", "{lib,test}/**/*"]
+    s.files = FileList["[A-Z]*", "{lib,test,shoulda_macros}/**/*"]
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"
