@@ -15,7 +15,7 @@ task :default => :test
 begin
   require 'rubygems'
   require 'jeweler'
-  Jeweler.gemspec = Gem::Specification.new do |s|
+  Jeweler::Tasks.new do |s|
     s.name = "webster"
     s.summary = "Generate random short words. Good for human-readable confirmation codes."
     s.email = "dcroak@thoughtbot.com"
