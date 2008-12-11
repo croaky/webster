@@ -1,16 +1,15 @@
 require 'test/unit'
 require 'rubygems'
 require 'shoulda'
-require 'quietbacktrace'
-require 'redgreen'
 require File.join(File.dirname(__FILE__), "..", "lib", "webster")
 
 class WebsterTest < Test::Unit::TestCase
 
+  include Webster
+
   context "#dictionary" do
     setup do
-      @webster = Webster.new
-      @dictionary = @webster.dictionary
+      @dictionary = Webster::DICTIONARY
       @blacklist = %w(bastaard bastard bastardly bastardy bedamn bitch damnable damnably damnation
         damnatory damned damner damnify damnii damning damningly damnonii damnous damnously 
         shita shitepoke shother shittah shittim undamned undamning undamn
@@ -29,8 +28,7 @@ class WebsterTest < Test::Unit::TestCase
 
   context "#random" do
     setup do
-      @webster = Webster.new
-      @random = @webster.random
+      @random = random
     end
 
     should "be a word" do
@@ -54,7 +52,7 @@ class WebsterTest < Test::Unit::TestCase
     end
 
     should "be a word in the dictionary" do
-      assert @webster.dictionary.include?(@random)
+      assert Webster::DICTIONARY.include?(@random)
     end
   end
 

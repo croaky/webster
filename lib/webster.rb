@@ -1,18 +1,11 @@
-class Webster
+module Webster
 
-  DICTIONARY_FILE = File.join(File.dirname(__FILE__), "words")
-
-  attr_accessor :dictionary
-  
-  def initialize
-    @dictionary = []
-    File.open(DICTIONARY_FILE) do |file|
-      @dictionary = file.readlines.collect { |word| word.chomp }
-    end
+  DICTIONARY = File.open(File.join(File.dirname(__FILE__), 'words')) do |file|
+    file.readlines.collect {|each| each.chomp}
   end
-
+  
   def random
-    dictionary[rand(dictionary.size)]
+    DICTIONARY[rand(DICTIONARY.size)]
   end
 
 end
