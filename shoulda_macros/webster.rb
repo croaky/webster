@@ -1,4 +1,4 @@
-class Webster 
+module Webster 
   module Shoulda
     # Example:
     #  context "Subscription#activation_code" do
@@ -24,7 +24,7 @@ class Webster
           "but is #{word.length} characters long."
         assert_no_match /\n/, word,
           "#{word} contains a carriage return."
-        assert Webster.new.dictionary.include?(word),
+        assert Webster::DICTIONARY.include?(word),
           "#{word} should be a word in the Webster dictionary"
       end
     end
