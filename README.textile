@@ -11,8 +11,8 @@ h2. Usage
   require 'rubygems'
   require 'webster'
 
-  webster = Webster.new
-  webster.random
+  include Webster	
+  random
   
   => "spoonless" 
 
