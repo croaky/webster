@@ -28,7 +28,7 @@ h2. Shoulda macro
 
 h2. Authors
 
-Webster was written for "Umbrella Today?":http://umbrellatoday.com by "thoughtbot":http://giantrobots.thoughtbot.com. It was extracted into a stand-alone Ruby gem by "Dan Croak":http://dancroak.com.
+Webster was written for "Umbrella Today?":http://umbrellatoday.com by "thoughtbot":http://giantrobots.thoughtbot.com. It was extracted into a stand-alone Ruby gem by "Dan Croak":http://www.workingwithrails.com/person/1991-dan-croak & "Jared Carroll":http://www.workingwithrails.com/person/12930-jared-carroll.
 
 h2. License
 
