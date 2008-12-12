@@ -23,7 +23,6 @@ h2. Shoulda macro
        subscription = Factory :subscription
        @word = subscription.set_activation_code
      end
-     
      should_be_webster_word "@word"
    end
 
