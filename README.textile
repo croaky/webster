@@ -19,12 +19,13 @@ h2. Usage
 h2. Shoulda macro
 
    context "Subscription#activation_code" do
-    setup do
-      subscription = Factory :subscription
-      @word = subscription.set_activation_code
-    end
-  
-   should_be_webster_word "@word"
+     setup do
+       subscription = Factory :subscription
+       @word = subscription.set_activation_code
+     end
+     
+     should_be_webster_word "@word"
+   end
 
 h2. Authors
 
