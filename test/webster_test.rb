@@ -5,8 +5,6 @@ require File.join(File.dirname(__FILE__), "..", "lib", "webster")
 
 class WebsterTest < Test::Unit::TestCase
 
-  include Webster
-
   context "#dictionary" do
     setup do
       @dictionary = Webster::DICTIONARY
@@ -21,17 +19,18 @@ class WebsterTest < Test::Unit::TestCase
 
     should "not contain offensive words or offensive-sounding words" do
       @blacklist.each do |word|
-        assert !@dictionary.include?(word), "The blacklist word, #{word}, is in the dictionary."
+        assert ! @dictionary.include?(word), "The blacklist word, #{word}, is in the dictionary."
       end
     end
   end
 
-  context "#random" do
+  context "#random_word" do
     setup do
-      @random = random
+      webster = Webster.new
+      @random = webster.random_word
     end
 
-    should "be a word" do
+    should "be a String" do
       assert_kind_of String, @random
     end
 
