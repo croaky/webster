@@ -1,4 +1,4 @@
-module Webster 
+class Webster 
   module Shoulda
     # Example:
     #  context "Subscription#activation_code" do

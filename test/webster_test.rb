@@ -1,6 +1,7 @@
 require 'test/unit'
 require 'rubygems'
 require 'shoulda'
+require File.join(File.dirname(__FILE__), '..', 'shoulda_macros', 'webster')
 require File.join(File.dirname(__FILE__), "..", "lib", "webster")
 
 class WebsterTest < Test::Unit::TestCase
@@ -27,32 +28,10 @@ class WebsterTest < Test::Unit::TestCase
   context "#random_word" do
     setup do
       webster = Webster.new
-      @random = webster.random_word
+      @word = webster.random_word
     end
 
-    should "be a String" do
-      assert_kind_of String, @random
-    end
-
-    should "be downcase" do
-      assert_equal @random, @random.downcase
-    end
-
-    should "be greater than or equal to five characters long" do
-      assert @random.length >= 5, "#{@random.inspect}, length: #{@random.length}"
-    end
-
-    should "be less than or equal to nine characters long" do
-      assert @random.length <= 9, "#{@random.inspect}, length: #{@random.length}"
-    end
-
-    should "not contain a carriage return" do
-      assert_no_match /\n/, @random
-    end
-
-    should "be a word in the dictionary" do
-      assert Webster::DICTIONARY.include?(@random)
-    end
+    should_be_webster_word '@word'
   end
 
 end
