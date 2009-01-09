@@ -14,7 +14,7 @@ task :default => :test
 
 spec = Gem::Specification.new do |s|
   s.name = "webster"
-  s.version = "0.4.8"
+  s.version = "0.4.9"
   s.summary = "Generate random short words. Good for human-readable confirmation codes."
   s.email = "dcroak@thoughtbot.com"
   s.homepage = "http://github.com/dancroak/webster"

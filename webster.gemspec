@@ -1,7 +1,7 @@
 --- !ruby/object:Gem::Specification 
 name: webster
 version: !ruby/object:Gem::Version 
-  version: 0.4.8
+  version: 0.4.9
 platform: ruby
 authors: 
 - Dan Croak
@@ -11,7 +11,7 @@ autorequire:
 bindir: bin
 cert_chain: []
 
-date: 2009-01-08 00:00:00 -05:00
+date: 2009-01-09 00:00:00 -05:00
 default_executable: 
 dependencies: []
 
@@ -27,7 +27,6 @@ files:
 - LICENSE
 - Rakefile
 - README.textile
-- VERSION.yml
 - lib/webster.rb
 - lib/words
 - shoulda_macros/webster.rb
