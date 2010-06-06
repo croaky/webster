@@ -4,7 +4,7 @@ Generate random short words. Good for human-readable confirmation codes.
 
 h2. Install
 
-  sudo gem install dancroak-webster --source=http://gems.github.com
+  gem install webster
 
 h2. Usage
 
@@ -13,8 +13,8 @@ h2. Usage
 
   webster = Webster.new
   webster.random_word
-  
-  => "spoonless" 
+
+  => "spoonless"
 
 h2. Shoulda macro
 
@@ -33,5 +33,3 @@ Webster was written for "Umbrella Today?":http://umbrellatoday.com by "thoughtbo
 h2. License
 
 MIT License, same terms as Ruby
-
-
